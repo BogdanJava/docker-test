@@ -8,10 +8,10 @@ import java.net.InetAddress
 @Controller
 class HomeController {
 
-    @GetMapping("/")
+    @GetMapping
     fun home(model: Model): String {
         val host = InetAddress.getLocalHost()
-        model.addAttribute("ip", String.format("%d.%d.%d.%d", host.hostAddress))
+        model.addAttribute("ip", host.hostAddress)
         return "home"
     }
 }
