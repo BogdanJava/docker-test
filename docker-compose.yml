@@ -1,6 +1,14 @@
-version: '2'
+version: "3"
 services:
-  app:
-    build: .
+  ip-app:
+    image: bogdanjava/ip-app:latest
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
     ports:
-      - 7776:7777
+    - 7776:7777
+    networks:
+    - mynet
+networks:
+  mynet:

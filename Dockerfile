@@ -8,3 +8,4 @@ WORKDIR /docker-app
 RUN ["mv", "target/app.jar", "app.jar"]
 EXPOSE 7777
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
