@@ -1,7 +1,7 @@
 version: "3"
 services:
   ip-app:
-    image: bogdanjava/ip-app:latest
+    image: bogdanjava/ip-app:1.0.0
     deploy:
       replicas: 3
       restart_policy:
