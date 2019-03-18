@@ -1,0 +1,8 @@
+server:
+  port: 7777
+spring:
+  data:
+    mongodb:
+      database: ip-app
+      host: ${MONGO_HOST}
+      port: ${MONGO_PORT}
