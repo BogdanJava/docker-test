@@ -2,6 +2,14 @@ version: "3"
 services:
   mongo:
     image: mongo:3.4
+    ports:
+      - 27017:27017
+    networks:
+      - mynet
+  mongo-init:
+    build: mongo-init
+    networks:
+      - mynet
   ip-app:
     image: bogdanjava/ip-app:1.0.1
     environment:
@@ -17,3 +25,4 @@ services:
     - mynet
 networks:
   mynet:
+    driver: bridge

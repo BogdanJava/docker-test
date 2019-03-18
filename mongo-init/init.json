@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Joe Smith",
+    "email": "jsmith@gmail.com",
+    "birthday": "16/07/1997",
+    "id": 1
+  },
+  {
+    "name": "Andrew Jackson",
+    "email": "ajackson@gmail.com",
+    "birthday": "26/02/1988",
+    "id": 2
+  },
+  {
+    "name": "Bill Torvalds",
+    "email": "gnumicrosoft@itechart-group.com",
+    "birthday": "30/01/1969",
+    "id": 3
+  }
+]
